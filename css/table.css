@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+    table-layout: auto;
+
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    vertical-align: text-top;
+}
+
+tr[scope="impair"] {
+    background-color: antiquewhite;
+}
