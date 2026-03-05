@@ -1,25 +1,2 @@
-fichiers modifiés : 
-index.html
-assoc.html
-contact.html
-distinctions.html
-la-presse.html
-nouvelle-piece.html
-nuit-théatre.html
 
-
-
-
-changement norme flavicon => vnd.icon => x-icon
-
-rajout fermeture de balise manquante </a> pour logo facebook
-
-ajout sécurité dans les liens vers autres sites : rel="noopener noreferrer"
-
-Modif légère Footer : enlevé les < et /> de yo.@nline
-
-suppression de formulaire et options de réservations en ligne => passer par HelloAsso + sécurisé
-
-Changement référencement affiche pièce en cours (+ facile MAJ site)
-
-Changement référencement affiche nuit du théatre (+ facile MAJ site)
+optimisation html & css
