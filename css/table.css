@@ -1,19 +1,17 @@
 table {
     width: 100%;
-    table-layout: auto;
-
     border-collapse: collapse;
 }
 
-tr, td, th {
+td, th {
     padding: 15px;
 }
 
 th {
     text-align: center;
-    vertical-align: text-top;
+    vertical-align: top;
 }
 
-tr[scope="impair"] {
+tr.impair {
     background-color: antiquewhite;
 }

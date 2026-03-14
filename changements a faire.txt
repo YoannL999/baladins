@@ -1,0 +1,5 @@
+regrouper piece + nuit du theatre + petite piece
+
+appliquer nouveau style à toutes les pages
+
+finir le responsive

@@ -1,6 +1,2 @@
-facebook : taille mini 16px - espace autour 0.5x la largeur
-
-instagram : https://commons.wikimedia.org/wiki/File:Instagram_logo.png
-
 masques
 https://www.pngegg.com/fr/png-pseyq

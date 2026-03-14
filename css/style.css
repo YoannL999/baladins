@@ -2,7 +2,11 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+}
+    
+.a:hover {
+    cursor: pointer;
 }
 
 ::selection {
@@ -10,62 +14,62 @@
     color: white;    
 }
 
+/* Header & Navigation */
 header {
     background-color: black;
-    height: 168px;
-    border-radius: 30px;
+    height: 134px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 10px 30px black;
+    z-index: 1;
 }
 
-.banniere {
-    position: relative;
-    margin-left: 50px;
-}
-
-.logo-fb {
+.logo-banniere{
     position: absolute;
-    right: 75px;
-    top: 120px;
+    margin-left: 10%;
+    width: 200px;
 }
 
-.logo-fb:hover {
-    opacity: 0.5;
+.logos {
+    display: flex;
+    margin-top: 30px;
+    float: inline-end;
+    margin-right: 10%;
 }
 
-.logo-insta {
-    position: absolute;
-    right: 25px;
-    top: 120px;
+.logos-1 {
+    margin-right: 15px;
 }
 
-.logo-insta:hover {
+.logo-fb, .logo-insta {
+    width: 30px;
+}
+
+.logo-fb:hover, .logo-insta:hover {
     opacity: 0.5;
 }
 
 .texte-banniere {
     display: inline;
-    position: relative;
+    position: absolute;
     font-size: 1.8em;
     color: darkmagenta;
     font-family: "Carter One", system-ui;
     font-style: italic;
-    bottom: 50px;
-    left: 25px;
-}
-
-header, nav {
-    width: 80%;
-    margin-left: 10%;
-    position: fixed;
-    box-shadow: 6px 6px 25px rgba(0, 0, 0, 5);
-    z-index: 1;
+    top: 30px;
+    left: 35%;
 }
 
 nav {
-    top: 175px;
-    background: linear-gradient(90deg, black, darkmagenta);
-    padding: 5px;
-    justify-content: center;
-    border-radius: 50px;  
+    margin-top: 110px;
+    padding: 0 12% 0 30%;
+}
+
+.conteneur-nav { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 25px;
 }
 
 nav a{
@@ -74,21 +78,11 @@ nav a{
     font-weight: bold;
 }
 
-.conteneur-nav { 
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;   
-}
-
-.nav-un, .nav-deux, .nav-trois, .nav-quatre, .nav-cinq, .nav-six, .nav-sept {
-    width: 14%;
-    cursor: pointer;
-}
-
-.nav-un:hover, .nav-deux:hover, .nav-trois:hover, .nav-quatre:hover, .nav-cinq:hover, .nav-six:hover, .nav-sept:hover {
+nav a:hover {
     opacity: 0.5;
 }
 
+/* Body & Main */
 body {
     background-image: url('../src/fond.jpg');
     background-attachment: fixed;
@@ -97,16 +91,12 @@ body {
 }
 
 main {    
-    padding: 225px 10% 0;
+    padding: 150px 10% 0;
     font-size: 1em;
 }
 
 .titre-main {
     color: darkmagenta;
-}
-
-.annonce-piece {
-    margin: 25px 0;
 }
 
 .section-main {
@@ -115,7 +105,6 @@ main {
     text-indent: 5%;
     text-align: justify;
     border-radius: 30px;
-    box-shadow: 6px 6px 25px rgba(0, 0, 0, 5);
     overflow: hidden;
     opacity: 0.85;
 }
@@ -133,9 +122,16 @@ main {
     margin-bottom: 1.2em;
 }
 
-/* retrouver a quoi correspond ce logo*/
-.logo {
-    margin-left: 20px;
+.img-president {
+    float: left;
+    margin: 0 25px 15px 0;
+    width: 250px;
+}
+
+.logo-baladins {
+    float: right;
+    margin: 0 0 15px 25px;
+    width: 250px;
 }
 
 section img {
@@ -145,22 +141,38 @@ section img {
 
 .masques1 {
     margin-bottom: 50px;
+    width: 100px;
 }
 
 .masques2 {
     margin-top: 50px;
+    width: 100px;
 }
 
-.img-president {
-    float: left;
-    margin: 0 25px 15px 0;
+/* Les Bouttons*/
+button {
+    display: flex;
+    justify-self: center;
+    margin: 15px;
+    color: white;
+    background-color: darkmagenta;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(52, 0, 52);
+}
+
+/* disposition du main et des asides*/
 .conteneur {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 .un {
@@ -182,14 +194,15 @@ section img {
     top: 150px;
 }
 
+/* Les Asides */
 aside {
     border: 2px solid black;
     margin: auto;    
     border-radius: 30px;
-    box-shadow: 6px 6px 25px rgba(0, 0, 0, 5);
     overflow: hidden;
     text-align: center;
     opacity: 0.85;
+    background-color: white;    
 }
 
 aside a {
@@ -203,19 +216,88 @@ aside a:hover {
 }
 
 .aside-titre {
-    padding: 25px;
+    padding: 15px;
     background: linear-gradient(90deg, black, darkmagenta);
     border-bottom: 2px solid black;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: white;
 }
 
-.aside-txt {
-    padding: 25px 25px 70px 25px;
-    background-color: white;
+.aside p {
+    margin-bottom: 1.2em;
 }
 
+.aside-txt {
+    padding: 25px;
+}
+
+/* Le Footer */
 footer {
     color: darkmagenta;
     text-align: center;
+    background-color: black;
+    padding: 25px 0 25px 0;
+}
+
+/* La Popup */
+.popupBackground {
+    display: none;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;    
+}
+
+.popupBackground.active {
+    display: flex;
+}
+
+.popup img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+/* responsive telephones*/
+@media (max-width: 480px) {
+
+main {    
+    padding: 150px 0;
+    font-size: 1.2em;
+}
+
+.section-main {
+    padding: 10px;
+}
+
+.img-president {
+    display: none;
+}
+
+.conteneur {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
+.un {
+    grid-column: 1;
+    grid-row: 1;
+    position: static;
+}
+
+.deux {
+    grid-column: 1;
+    grid-row: 2;
+    position: static;
+}
+
+.trois {
+    grid-column: 1;
+    grid-row: 3;
+    position: static;
+}
+
 }

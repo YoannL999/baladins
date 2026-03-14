@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/listes.css" rel="stylesheet">
+    <script src="../script/config.js" defer></script>
+    <script src="../script/popup.js" defer></script>
     <link rel="icon" type="image/x-icon" href="../src/favicon_baladins.ico">
     <title>Théâtre en Mayenne | Les Baladins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,39 +15,39 @@
 </head>
 
 <body> 
-
     <header>
-        <div class="banniere">
-            <img src="../src/banniere.png" alt="Bannière des Baladins" class="banniere" width="250px">
-            <p class="texte-banniere">Troupe de St-Berthevin en Mayenne !</p>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Baladins-St-Berthevin/pfbid02xCUDEPzqtRSL19W6xefdZoWrPiCJrVSRLBccJvHPcggRhASuadT4aHNr1ijJY5R9l/?rdid=LOWbwLPQgM34WgQI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1G51JjA46E" class="logo-fb">
-                <img src="../src/Facebook_Logo_Secondary.png" alt="Facebook" width="35px">
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lesbaladins.stberthevin53/" class="logo-insta">
-                <img src="../src/Instagram_logo.png" alt="Instagram" width="35px">            
-            </a>                       
-        </div>
+        <img src="../src/banniere.png" alt="Bannière des Baladins" class="logo-banniere">
+         <p class="texte-banniere">Troupe de St-Berthevin en Mayenne !</p>
+        <div class="logos">   
+            <div class="logos-1">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Baladins-St-Berthevin/pfbid02xCUDEPzqtRSL19W6xefdZoWrPiCJrVSRLBccJvHPcggRhASuadT4aHNr1ijJY5R9l/?rdid=LOWbwLPQgM34WgQI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1G51JjA46E">
+                <img src="../src/Facebook_Logo_Secondary.png" alt="Facebook" class="logo-fb">
+                </a>
+            </div>
+            <div class="logos-2">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lesbaladins.stberthevin53/">
+                <img src="../src/Instagram_Glyph_White.png" alt="Instagram" class="logo-insta">                
+                </a> 
+            </div> 
+        </div>                     
+        <nav>
+            <div class="conteneur-nav">
+	            <a href="../index.html">Accueil</a>
+			    <a href="assoc.html">L'Association</a>
+			    <a href="saisons.html">Saisons passées</a>
+			    <a href="distinctions.html">Distinctions</a>
+                <a href="partenaires.html">Partenaires</a>
+                <a href="contact.html">Contact</a>	    
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <div class="conteneur-nav">
-	        <div class="nav-un"><a href="../index.html">Accueil</a></div>
-			<div class="nav-deux"><a href="assoc.html">L'Association</a></div>
-			<div class="nav-trois"><a href="saisons.html">Saisons passées</a></div>
-			<div class="nav-quatre"><a href="distinctions.html">Distinctions</a></div>
-            <div class="nav-cinq"><a href="partenaires.html">Partenaires</a></div>
-            <div class="nav-six"><a href="la-presse.html">La presse en parle</a></div>
-            <div class="nav-sept"><a href="contact.html">Contact</a></div>	    
-        </div>
-    </nav>
-
     <main>
-        <br>
         <div class="conteneur">
             <div class="box un">
             <section class="section-main">
-                <img src="../src/masques.png" alt="masques de théâtre" width="100px" class="masques1">
-                <img style="float: inline-end;" src="../src/logo_baladins.png" alt="Logo Baladins" width="250px" class="logo">
+                <img src="../src/masques.png" alt="masques de théâtre" class="masques1">
+                <img src="../src/logo_baladins.png" alt="Logo Baladins" class="logo-baladins">
                 <h2>Les Baladins, une association de théâtre créée en 1989</h2>
                 <br>
                 <p><b><em>De février à avril 1989</em></b>, une nouvelle association théâtrale prend naissance à Saint-Berthevin. Nouveau conseil d’administration et nouveaux statuts de l’association qui porte toujours le nom de Association Théâtrale de Saint-Berthevin (ATSB). Hervé Garlantezec, issu de l’équipe d’acteurs, en est le premier président.</p>
@@ -67,23 +69,24 @@
                     <li><b>Membres</b> : Isabelle Corvée, Bastien Delaroche, Sylvain Colnot</li>
                     <li><b>Metteurs en scène</b> : Tony Babin, Maud Lecapitaine et Alain Fournier</li>
                 </ul>
-                <img src="../src/masques.png" alt="masques de théâtre" width="100px" class="masques2">
+                <img src="../src/masques.png" alt="masques de théâtre" class="masques2">
             </section>
             </div>
             
             <div class="box deux">
             <aside>
-                <p class="aside-titre">Save the Date !</p>
-                <p class="aside-txt"><a href="nouvelle-piece.html">Notre prochaine pièce !</a><br>Impair et Père (Ray Cooney)<br>
-                <br>    
-                <a href="nuit-theatre.html">Nuit du Théâtre 2026</a><br>Samedi 4 avril 2026</p>
+                <p class="aside-titre">Nos Événements</p>
+                <p class="aside-txt"><a href="representations.html#nvl-piece">Notre pièce</a><br><span id="piece">piece</span></p>                    
+                <p class="aside-txt"><a href="representations.html#nuit-theatre">Nuit du Théâtre <span id="annee_2">annee</span></a><br><span id="date">date</span></p>
+                <p class="aside-txt"><a href="representations.html#courte">Autres représentations</a><br><span id="petite_piece">piece</span></p>
             </aside>
             </div>
 
             <div class="box trois">
             <aside>
-                <p class="aside-titre">Annonce aux assos</p>
-                <p class="aside-txt"><a href="repre-ext.html">Représentations extérieures</a><br><br>Vous recherchez une<br>troupe de théâtre<br>pour une soirée,<br>contactez l'association</p>
+                <p class="aside-titre">Les Baladins recrutent</p>
+                <p class="aside-txt">Les Baladins recherchent des bénévoles pour compléter leur équipe technique !</p>
+                <div class="btn_decouvrir"><button>Découvrir</button></div>
             </aside>
             </div>
         </div>
@@ -93,6 +96,12 @@
         <p>© Copyright 2010-2026 - Les Baladins de Saint-Berthevin</p>
         <p><em>site réalisé par yo.@nline</em></p>           
     </footer>
-    
+
+    <!--popup-->
+    <div class="popupBackground">
+        <div class="popup">
+            <img src="../src/recrutement.jpg" alt="Recrutement" class="recrutement">
+        </div>
+    </div>   
 </body>
 </html>
