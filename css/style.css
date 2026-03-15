@@ -82,6 +82,59 @@ nav a:hover {
     opacity: 0.5;
 }
 
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;    
+    z-index: 2;
+    overflow: visible;
+}
+
+.burger span {
+    width: 40px;
+    height: 5px;
+    background: white;
+    margin: 2.6px 0;
+    display: block;
+    transition: transform 0.35s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+.burger span:nth-child(2) {
+    transform: none;
+}
+
+/* ligne du haut */
+.burger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+/* ligne du milieu */
+.burger.active span:nth-child(2) {
+    /*transform: translateX(20px);*/
+    opacity: 0;
+}
+
+/* ligne du bas */
+.burger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.burger:hover, .burger:focus, .burger:active {
+    outline: none;
+    background: none;
+}
+
 /* Body & Main */
 body {
     background-image: url('../src/fond.jpg');
@@ -262,8 +315,53 @@ footer {
 }
 
 /* responsive telephones*/
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
+/* bannière et navigation */    
+.logo-banniere{
+    margin-left: 0%;
+}
+
+.logos {
+    margin-top: 20px;
+    margin-right: 5%;
+}
+
+.texte-banniere {
+    display: none;
+}
+
+.burger {
+    display: flex;
+  }
+
+.conteneur-nav {
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    width: 170px;
+    background: black;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+ 
+.conteneur-nav a {
+    display: block;
+    padding: 0px;
+    font-size: 1.3em;
+}
+
+.conteneur-nav.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+/* Le Main */
 main {    
     padding: 150px 0;
     font-size: 1.2em;
@@ -277,6 +375,11 @@ main {
     display: none;
 }
 
+.logo-baladins {
+    display: none;
+}
+
+/* Les Box */
 .conteneur {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
@@ -298,6 +401,45 @@ main {
     grid-column: 1;
     grid-row: 3;
     position: static;
+}
+
+}
+
+/*responsive tablettes*/
+@media (min-width: 769px) and (max-width: 1280px){
+
+/* bannière et navigation*/
+.logo-banniere{
+    margin-left: 0%;
+}
+
+.logos {
+    margin-top: 20px;
+    margin-right: 5%;
+}
+
+.texte-banniere {
+    top: 45px;
+}
+
+nav {
+    padding: 0 10px 0 0;
+}
+
+.conteneur-nav { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+/*le main*/
+main {    
+    padding: 150px 5px;
+}
+
+.section-main {
+    padding: 10px;
 }
 
 }

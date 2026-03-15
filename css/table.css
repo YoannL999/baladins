@@ -15,3 +15,12 @@ th {
 tr.impair {
     background-color: antiquewhite;
 }
+
+/* responsive telephones*/
+@media (max-width: 768px) {
+
+td, th {
+    padding: 3px;
+}
+
+}
