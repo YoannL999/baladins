@@ -1,8 +1,8 @@
 * {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    box-sizing: border-box;  
+    font-family: Arial, Helvetica, sans-serif;    
+    box-sizing: border-box;
+    line-height: 1.5;  
 }
     
 .a:hover {
@@ -47,6 +47,8 @@ header {
 
 .logo-fb:hover, .logo-insta:hover {
     opacity: 0.5;
+    transform: scale(1.15);
+    transition: transform 0.4s ease;
 }
 
 .texte-banniere {
@@ -80,6 +82,8 @@ nav a{
 
 nav a:hover {
     opacity: 0.5;
+    transform: scale(1.15);
+    transition: transform 0.4s ease;
 }
 
 .burger {
@@ -121,7 +125,6 @@ nav a:hover {
 
 /* ligne du milieu */
 .burger.active span:nth-child(2) {
-    /*transform: translateX(20px);*/
     opacity: 0;
 }
 
@@ -150,6 +153,7 @@ main {
 
 .titre-main {
     color: darkmagenta;
+    text-align: center;
 }
 
 .section-main {
@@ -202,6 +206,13 @@ section img {
     width: 100px;
 }
 
+.image-evenements {
+    float: right;
+    width: 250px;
+    border-radius: 15px;
+    margin: 0 0 15px 25px;
+}
+
 /* Les Bouttons*/
 button {
     display: flex;
@@ -219,6 +230,43 @@ button:hover {
     cursor: pointer;
     background-color: rgb(52, 0, 52);
 }
+
+/* le texte defilant dans l'index*/
+.marquee {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: defilement 12s linear infinite;
+}
+
+.marquee-track span {
+    white-space: nowrap;
+    margin-right: 50px; /* espace entre répétitions */
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+/* animation fluide */
+@keyframes defilement {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-responsive {
+    visibility: hidden;
+    color: darkmagenta;
+    font-weight: bold;
+    text-align: center;    
+}
+
 
 /* disposition du main et des asides*/
 .conteneur {
@@ -276,12 +324,8 @@ aside a:hover {
     color: white;
 }
 
-.aside p {
-    margin-bottom: 1.2em;
-}
-
 .aside-txt {
-    padding: 25px;
+    padding: 15px;
 }
 
 /* Le Footer */
@@ -377,6 +421,41 @@ main {
 
 .logo-baladins {
     display: none;
+}
+
+.image-evenements {
+    float: none;
+    margin: 0 auto;
+}
+
+.marquee-track {
+    display: none;
+}
+
+.marquee-responsive {
+    visibility: visible;
+    animation: neon 3s infinite;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 1;
+        text-shadow: 
+            0 0 10px magenta,
+            0 0 20px magenta,
+            0 0 40px purple;
+    }
+    50% {
+        opacity: 0.2;
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 
+            0 0 10px magenta,
+            0 0 20px magenta,
+            0 0 40px purple;
+    }
 }
 
 /* Les Box */
