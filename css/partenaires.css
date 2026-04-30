@@ -1,42 +1,31 @@
-.conteneur-partenaires {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+.grid-partenaires, .grid-partenaires-g, .grid-partenaires-p, .grid-partenaires-autres {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
-.box-part-un, .box-part-deux {
-    margin: auto;
-    margin-bottom: 20px;
+.grid-partenaires, .grid-partenaires-autres {
+    grid-template-rows: 1fr;
 }
 
 .grid-partenaires-g {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
+    grid-template-rows: repeat(3 1fr);
 }
 
 .grid-partenaires-p {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 15px;
+    grid-template-rows: repeat(4 1fr);
 }
 
-.grid-partenaires-autres {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
+.grid-partenaires {
+    text-align: center;
+    align-items: self-end;    
 }
 
-.grid-partenaires-g img, .grid-partenaires-p img, .grid-partenaires-autres img {
+.grid-partenaires img, .grid-partenaires-g img, .grid-partenaires-p img, .grid-partenaires-autres img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
-
-
 
 .partenaires:hover {
     opacity: 0.5;
