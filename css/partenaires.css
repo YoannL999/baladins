@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
+    text-align: center;
+    align-items: center;    
 }
 
 .grid-partenaires, .grid-partenaires-autres {
@@ -9,16 +11,11 @@
 }
 
 .grid-partenaires-g {
-    grid-template-rows: repeat(3 1fr);
-}
-
-.grid-partenaires-p {
     grid-template-rows: repeat(4 1fr);
 }
 
-.grid-partenaires {
-    text-align: center;
-    align-items: self-end;    
+.grid-partenaires-p {
+    grid-template-rows: repeat(5 1fr);
 }
 
 .grid-partenaires img, .grid-partenaires-g img, .grid-partenaires-p img, .grid-partenaires-autres img {
