@@ -7,7 +7,8 @@
     <link href="../../css/photos.css" rel="stylesheet">
     <script src="../../script/config.js" defer></script>
     <script src="../../script/popup.js" defer></script>
-    <script src="../../script/burger.js" defer></script>   
+    <script src="../../script/burger.js" defer></script>
+    <script src="../../script/lightbox.js" defer></script>  
     <link rel="icon" type="image/x-icon" href="../../src/favicon_baladins.ico">
     <title>Théâtre en Mayenne | Les Baladins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,47 +61,47 @@
                 <p>Cinq femmes brodant dans une rue de Chioggia attendent leur frère, leur mari ou leur fiancé partis pêcher en mer depuis dix mois. Dans ce petit groupe vient s’immiscer le jeune et fainéant Toffolo qui papillonne autour de deux jeunes femmes, Lucietta, sur le point de se marier, et Checca, encore une très jeune fille. Commencent alors les jalousies et commérages.</p>
                 <p>On annonce dès la première scène des mariages à venir, mais vont-ils se réaliser ou les futurs mariés vont-ils se laisser influencer par les mensonges et par les multiples disputes qui en découlent ?</p>
                 <p>Mise en scène est assurée par Alain Fournier assisté par Bastien Delaroche.</p>
-                <div class="grid-photos-9-12">
-                    <a target="_blank" href="../../src/photos/bc-01.jpg" class="lien-photo">
-                        <img src="../../src/photos/bc-01.jpg" alt="Photo de la représentation">
+                <div class="grid-photos">
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-01.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-02.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-02.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-02.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-03.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-03.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-03.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-04.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-04.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-04.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-05.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-05.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-05.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-06.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-06.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-06.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-07.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-07.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-07.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-08.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-08.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-08.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-09.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-09.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-09.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/bc-10.jpg" class="lien-photo">    
-                        <img src="../../src/photos/bc-10.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/bc-10.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>                    
+                    </div>                    
                 </div>
                 <img src="../../src/masques.png" alt="masques de théâtre" class="masques2">
             </section>
@@ -136,6 +137,18 @@
         <div class="popup">
             <img src="../../src/recrutement.jpg" alt="Recrutement" class="recrutement">
         </div>
-    </div>   
+    </div>
+    
+    <!--lightbox-->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <div class="nav nav-prev">&#10094;</div>
+            <img id="lightbox-img" class="lightbox-img">
+            <div class="nav nav-next">&#10095;</div>
+        </div>
+        <div class="thumbnails" id="thumbnails"></div>
+    </div>
+
 </body>
 </html>

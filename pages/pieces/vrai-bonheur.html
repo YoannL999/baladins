@@ -7,7 +7,8 @@
     <link href="../../css/photos.css" rel="stylesheet">
     <script src="../../script/config.js" defer></script>
     <script src="../../script/popup.js" defer></script>
-    <script src="../../script/burger.js" defer></script>    
+    <script src="../../script/burger.js" defer></script>
+    <script src="../../script/lightbox.js" defer></script>    
     <link rel="icon" type="image/x-icon" href="../../src/favicon_baladins.ico">
     <title>Théâtre en Mayenne | Les Baladins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,47 +61,47 @@
                 <p>Une bande de potes se retrouve au mariage de leur amie d'enfance. C'est l'occasion pour chacun de faire un point sur sa vie : les couples se dérèglent, les comptes se règlent…</p>
                 <p>De la jarretière à la soupe à l'oignon, la soirée sera pour le moins inoubliable.</p>
                 <p>Cette année, la mise en scène est assurée par Alain Fournier, Maud Lecapitaine et Tony Babin.</p>
-                <div class="grid-photos-9-12">
-                    <a target="_blank" href="../../src/photos/vb-01.jpg" class="lien-photo">
-                        <img src="../../src/photos/vb-01.jpg" alt="Photo de la représentation">
+                <div class="grid-photos">
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-01.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-02.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-02.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-02.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-03.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-03.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-03.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-04.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-04.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-04.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-05.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-05.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-05.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-06.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-06.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-06.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-07.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-07.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-07.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-08.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-08.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-08.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-09.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-09.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-09.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
-                    <a target="_blank" href="../../src/photos/vb-10.jpg" class="lien-photo">    
-                        <img src="../../src/photos/vb-10.jpg" alt="Photo de la représentation">
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/vb-10.jpg" alt="Photo de la représentation" class="photo">
                         <div class="photo-hover">Agrandir</div>
-                    </a>
+                    </div>
                 </div>
                 <img src="../../src/masques.png" alt="masques de théâtre" class="masques2">
             </section>
@@ -136,6 +137,17 @@
         <div class="popup">
             <img src="../../src/recrutement.jpg" alt="Recrutement" class="recrutement">
         </div>
-    </div>    
+    </div>
+    
+    <!--lightbox-->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <div class="nav nav-prev">&#10094;</div>
+            <img id="lightbox-img" class="lightbox-img">
+            <div class="nav nav-next">&#10095;</div>
+        </div>
+    <div class="thumbnails" id="thumbnails"></div>
+
 </body>
 </html>
