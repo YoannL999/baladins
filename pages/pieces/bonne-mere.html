@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/photos.css" rel="stylesheet">
     <script src="../../script/config.js" defer></script>
     <script src="../../script/popup.js" defer></script>
-    <script src="../../script/burger.js" defer></script>    
+    <script src="../../script/burger.js" defer></script>
+    <script src="../../script/lightbox.js" defer></script>    
     <link rel="icon" type="image/x-icon" href="../../src/favicon_baladins.ico">
     <title>Théâtre en Mayenne | Les Baladins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,6 +61,28 @@
                 <p>Venise, au XVIIIe siècle...</p>
                 <p>Deux veuves pauvres, Barbara, la bonne mère et Lodovica, la mauvaise mère élèvent seules leurs enfants. Toutes les deux, elles projettent de marier leurs enfants de la meilleure des manières. Pourvu que ce soit économiquement avantageux et socialement gratifiant.</p>
                 <p>Pour mener à bien leurs projets, elles manigancent avec les personnes de leur entourage. Et si la mauvaise mère n'était pas celle que l'on pense ?</p>
+                <div class="grid-photos">
+                    <div class="photo-container">
+                        <img src="../../src/photos/2023_La bonne mere_1.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2023_La bonne mere_2.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2023_La bonne mere_3.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2023_La bonne mere_4.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2023_La bonne mere_5.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                </div>
                 <img src="../../src/masques.png" alt="masques de théâtre" class="masques2">
             </section>
             </div>
@@ -93,6 +117,17 @@
         <div class="popup">
             <img src="../../src/recrutement.jpg" alt="Recrutement" class="recrutement">
         </div>
-    </div>    
+    </div>
+    
+    <!--lightbox-->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <div class="nav nav-prev">&#10094;</div>
+            <img id="lightbox-img" class="lightbox-img">
+            <div class="nav nav-next">&#10095;</div>
+        </div>
+    <div class="thumbnails" id="thumbnails"></div>
+    
 </body>
 </html>

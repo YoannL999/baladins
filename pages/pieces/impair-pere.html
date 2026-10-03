@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/photos.css" rel="stylesheet">
     <script src="../../script/config.js" defer></script>
     <script src="../../script/popup.js" defer></script>
-    <script src="../../script/burger.js" defer></script>    
+    <script src="../../script/burger.js" defer></script>
+    <script src="../../script/lightbox.js" defer></script>   
     <link rel="icon" type="image/x-icon" href="../../src/favicon_baladins.ico">
     <title>Théâtre en Mayenne | Les Baladins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,6 +62,31 @@
                 <p><em>Une comédie de Ray Cooney.</em></p>
                 <p>"Impair et père" est une comédie pleine de quiproquos. On suit Pierre Jouffroy, un éminent chirurgien, sur le point de donner une conférence très importante devant 300 chirurgiens du monde entier. Il pourrait ainsi obtenir une belle promotion. Mais tout se complique lorsqu'une ancienne infirmière réapparaît : il découvre qu'il a un fils caché âgé de 18 ans, dont il ignorait l'existence. Pour éviter le scandale, il invente des mensonges et entraîne ses collègues et son entourage dans une série de situations absurdes.</p>
                 <p>Dans cette pièce, on retrouve tous les ingrédients typiques du théâtre de boulevard : les malentendus, les portes qui claquent, les identités cachées et l'accumulation de gags.</p>
+                <div class="grid-photos">
+                    <div class="photo-container">
+                        <img src="../../src/photos/2025_Impair et pere_1.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2025_Impair et pere_2.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2025_Impair et pere_3.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2025_Impair et pere_4.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2025_Impair et pere_5.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
+                    <div class="photo-container">
+                        <img src="../../src/photos/2025_Impair et pere_6.JPG" alt="Photo de la représentation" class="photo">
+                        <div class="photo-hover">Agrandir</div>
+                    </div>
                 <img src="../../src/masques.png" alt="masques de théâtre" class="masques2">
             </section>
         </div>
@@ -94,6 +121,17 @@
         <div class="popup">
             <img src="../../src/recrutement.jpg" alt="Recrutement" class="recrutement">
         </div>
-    </div>    
+    </div> 
+
+    <!--lightbox-->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <div class="nav nav-prev">&#10094;</div>
+            <img id="lightbox-img" class="lightbox-img">
+            <div class="nav nav-next">&#10095;</div>
+        </div>
+    <div class="thumbnails" id="thumbnails"></div>
+   
 </body>
 </html>

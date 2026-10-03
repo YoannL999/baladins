@@ -1,6 +1,7 @@
 /** Modification simplifiée des Asides */
 
-let piece_titre ="Le Repas des Fauves (Vahé Katcha)" /** Titre de la pièce en cours */
+/**let piece_titre ="Le Repas des Fauves (Vahé Katcha)" /** Titre de la pièce en cours */
+let piece_titre = "infos à venir"
 let annee_ndt ="2027" /** l'année de la nuit du théatre en cours */
 let date_ndt ="Samedi 10 avril 2027" /** la date de la nuit du théatre en cours */
 let petite_piece_titre ="Moi je crois pas ! (Jean-Claude Grumberg)" /** la petite pièce */
