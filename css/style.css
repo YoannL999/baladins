@@ -179,6 +179,10 @@ main {
     margin-bottom: 1.2em;
 }
 
+.section-main p[style*="text-align: center"] {
+    text-indent: 0;
+}
+
 .img-president {
     float: left;
     margin: 0 25px 15px 0;
@@ -217,13 +221,27 @@ section img {
 button {
     display: flex;
     justify-self: center;
-    margin: 15px;
+    margin: 15px auto;
+    width: fit-content;
+    text-indent: 0;
     color: white;
     background-color: darkmagenta;
     border-radius: 15px;
     padding: 5px 15px;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.conteneur-billetterie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-indent: 0;
+}
+
+.conteneur-billetterie #btn_billetterie {
+    margin: 15px 0;
 }
 
 button:hover {
